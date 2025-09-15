@@ -1,0 +1,549 @@
+---
+# for clang-format v20
+
+# BasedOnStyle: LLVM
+# BasedOnStyle: Google
+# BasedOnStyle: Chromium
+# BasedOnStyle: Mozilla
+# BasedOnStyle: WebKit
+# BasedOnStyle: Microsoft
+# BasedOnStyle: GNU
+# BasedOnStyle: InheritParentConfig
+
+AccessModifierOffset: -4
+
+AlignAfterOpenBracket: Align
+# AlignAfterOpenBracket: DontAlign
+# AlignAfterOpenBracket: AlwaysBreak
+# AlignAfterOpenBracket: BlockIndent
+
+AlignArrayOfStructures: Left
+# AlignArrayOfStructures: Right
+# AlignArrayOfStructures: None
+
+AlignConsecutiveAssignments:
+    Enabled: false
+    AcrossEmptyLines: false
+    AcrossComments: false
+    AlignCompound: false
+    AlignFunctionDeclarations: false
+    AlignFunctionPointers: false
+    PadOperators: false
+
+AlignConsecutiveBitFields:
+    Enabled: false
+    AcrossEmptyLines: false
+    AcrossComments: false
+    AlignCompound: false
+    AlignFunctionDeclarations: false
+    AlignFunctionPointers: false
+    PadOperators: false
+
+AlignConsecutiveDeclarations:
+    Enabled: false
+    AcrossEmptyLines: false
+    AcrossComments: false
+    AlignCompound: false
+    AlignFunctionDeclarations: false
+    AlignFunctionPointers: false
+    PadOperators: false
+
+AlignConsecutiveMacros:
+    Enabled: false
+    AcrossEmptyLines: false
+    AcrossComments: false
+    AlignCompound: false
+    AlignFunctionDeclarations: false
+    AlignFunctionPointers: false
+    PadOperators: false
+
+AlignConsecutiveShortCaseStatements:
+    Enabled: false
+    AcrossEmptyLines: false
+    AcrossComments: false
+    AlignCaseArrows: false
+    AlignCaseColons: false
+
+AlignEscapedNewlines: DontAlign
+# AlignEscapedNewlines: Left
+# AlignEscapedNewlines: LeftWithLastLine
+# AlignEscapedNewlines: Right
+
+# AlignOperands: DontAlign
+AlignOperands: Align
+# AlignOperands: AlignAfterOperator
+
+AlignTrailingComments:
+    # Kind: Leave
+    # Kind: Always
+    Kind: Never
+    OverEmptyLines: 0
+
+AllowAllArgumentsOnNextLine: false
+
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowBreakBeforeNoexceptSpecifier: Never
+# AllowBreakBeforeNoexceptSpecifier: OnlyWithParen
+# AllowBreakBeforeNoexceptSpecifier: Always
+
+AllowShortBlocksOnASingleLine: Never
+# AllowShortBlocksOnASingleLine: Empty
+# AllowShortBlocksOnASingleLine: Always
+
+AllowShortCaseExpressionOnASingleLine: true
+
+AllowShortCaseLabelsOnASingleLine: true
+
+AllowShortCompoundRequirementOnASingleLine: true
+
+# AllowShortEnumsOnASingleLine: false
+
+# AllowShortFunctionsOnASingleLine: None
+AllowShortFunctionsOnASingleLine: InlineOnly
+# AllowShortFunctionsOnASingleLine: Empty
+# AllowShortFunctionsOnASingleLine: Inline
+# AllowShortFunctionsOnASingleLine: All
+
+# AllowShortIfStatementsOnASingleLine: Never
+# AllowShortIfStatementsOnASingleLine: WithoutElse
+# AllowShortIfStatementsOnASingleLine: OnlyFirstIf
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+
+# AllowShortLambdasOnASingleLine: None
+AllowShortLambdasOnASingleLine: Empty
+# AllowShortLambdasOnASingleLine: Inline
+# AllowShortLambdasOnASingleLine: All
+
+AllowShortLoopsOnASingleLine: true
+
+AllowShortNamespacesOnASingleLine: false
+
+AlwaysBreakBeforeMultilineStrings: false
+
+# AttributeMacros: [__capability, __output, __unused]
+
+BinPackArguments: false
+
+BinPackLongBracedList: true
+
+# BinPackParameters: BinPack
+BinPackParameters: OnePerLine
+# BinPackParameters: AlwaysOnePerLine
+
+# BitFieldColonSpacing: Both
+# BitFieldColonSpacing: None
+# BitFieldColonSpacing: Before
+BitFieldColonSpacing: After
+
+BraceWrapping:
+    AfterCaseLabel: true
+    AfterClass: true
+    # AfterControlStatement: Never
+    # AfterControlStatement: MultiLine
+    AfterControlStatement: Always
+    AfterEnum: true
+    AfterFunction: true
+    AfterNamespace: true
+    AfterStruct: true
+    AfterUnion: true
+    AfterExternBlock: true
+    BeforeCatch: true
+    BeforeElse: true
+    BeforeLambdaBody: false
+    BeforeWhile: false
+    IndentBraces: false
+    SplitEmptyFunction: true
+    SplitEmptyRecord: true
+    SplitEmptyNamespace: true
+
+BracedInitializerIndentWidth: 4
+
+# BreakAdjacentStringLiterals: true
+
+BreakAfterAttributes: Always
+# BreakAfterAttributes: Leave
+# BreakAfterAttributes: Never
+
+# BreakAfterReturnType: Automatic
+# BreakAfterReturnType: ExceptShortType
+# BreakAfterReturnType: All
+# BreakAfterReturnType: TopLevel
+# BreakAfterReturnType: AllDefinitions
+# BreakAfterReturnType: TopLevelDefinitions
+
+# BreakBeforeBinaryOperators: None
+# BreakBeforeBinaryOperators: NonAssignment
+# BreakBeforeBinaryOperators: All
+
+# BreakBeforeBraces: Attach
+# BreakBeforeBraces: Linux
+# BreakBeforeBraces: Mozilla
+# BreakBeforeBraces: Stroustrup
+# BreakBeforeBraces: Allman
+# BreakBeforeBraces: Whitesmiths
+# BreakBeforeBraces: GNU
+# BreakBeforeBraces: WebKit
+BreakBeforeBraces: Custom
+
+# BreakBeforeConceptDeclarations: Never
+# BreakBeforeConceptDeclarations: Allowed
+# BreakBeforeConceptDeclarations: Always
+
+# BreakBeforeInlineASMColon: Never
+# BreakBeforeInlineASMColon: OnlyMultiline
+# BreakBeforeInlineASMColon: Always
+
+# BreakBeforeTemplateCloser: true
+
+# BreakBeforeTernaryOperators: false
+
+# BreakBinaryOperations: Never
+# BreakBinaryOperations: OnePerLine
+# BreakBinaryOperations: RespectPrecedence
+
+# BreakConstructorInitializers: BeforeColon
+# BreakConstructorInitializers: BeforeComma
+# BreakConstructorInitializers: AfterColon
+
+BreakFunctionDefinitionParameters: false
+
+# BreakInheritanceList: BeforeColon
+# BreakInheritanceList: BeforeComma
+# BreakInheritanceList: AfterColon
+# BreakInheritanceList: AfterComma
+
+BreakStringLiterals: false
+
+# BreakTemplateDeclarations: Leave
+# BreakTemplateDeclarations: No
+# BreakTemplateDeclarations: MultiLine
+BreakTemplateDeclarations: Yes
+
+ColumnLimit: 0
+
+# CommentPragmas:
+
+CompactNamespaces: false
+
+ConstructorInitializerIndentWidth: 4
+
+ContinuationIndentWidth: 4
+
+Cpp11BracedListStyle: true
+
+DerivePointerAlignment: false
+
+DisableFormat: false
+
+EmptyLineAfterAccessModifier: Never
+# EmptyLineAfterAccessModifier: Leave
+# EmptyLineAfterAccessModifier: Always
+
+# EmptyLineBeforeAccessModifier: Never
+# EmptyLineBeforeAccessModifier: Leave
+EmptyLineBeforeAccessModifier: LogicalBlock
+# EmptyLineBeforeAccessModifier: Always
+
+EnumTrailingComma: Leave
+# EnumTrailingComma: Insert
+# EnumTrailingComma: Remove
+
+FixNamespaceComments: true
+
+ForEachMacros: [foreach, FOREACH, RANGES_FOR, Q_FOREACH, BOOST_FOREACH]
+
+IfMacros: [IF]
+
+# IncludeBlocks: Preserve
+# IncludeBlocks: Merge
+IncludeBlocks: Regroup
+
+# IncludeCategories:
+
+# IncludeIsMainRegex:
+
+# IncludeIsMainSourceRegex:
+
+IndentAccessModifiers: false
+
+IndentCaseBlocks: false
+
+IndentCaseLabels: true
+
+IndentExportBlock: false
+
+# IndentExternBlock: AfterExternBlock
+IndentExternBlock: NoIndent
+# IndentExternBlock: Indent
+
+IndentGotoLabels: false
+
+IndentPPDirectives: None
+# IndentPPDirectives: AfterHash
+# IndentPPDirectives: BeforeHash
+
+IndentRequiresClause: false
+
+IndentWidth: 4
+
+IndentWrappedFunctionNames: false
+
+InsertBraces: false
+
+InsertNewlineAtEOF: true
+
+IntegerLiteralSeparator:
+    Binary: 4
+    BinaryMinDigits: 8
+    Decimal: 3
+    DecimalMinDigits: 9
+    Hex: 2
+    HexMinDigits: 8
+
+KeepEmptyLines:
+    AtEndOfFile: false
+    AtStartOfBlock: false
+    AtStartOfFile: false
+
+KeepFormFeed: false
+
+LambdaBodyIndentation: Signature
+# LambdaBodyIndentation: OuterScope
+
+# Language: None
+# Language: C
+Language: Cpp
+# Language: CSharp
+# Language: Java
+# Language: JavaScript
+# Language: Json
+# Language: ObjC
+# Language: Proto
+# Language: TableGen
+# Language: TextProto
+# Language: Verilog
+
+LineEnding: LF
+# LineEnding: CRLF
+# LineEnding: DeriveLF
+# LineEnding: DeriveCRLF
+
+# MacroBlockBegin:
+
+# MacroBlockEnd:
+
+# Macros:
+
+# MacrosSkippedByRemoveParentheses:
+
+# MainIncludeChar: Quote
+# MainIncludeChar: AngleBracket
+MainIncludeChar: Any
+
+MaxEmptyLinesToKeep: 1
+
+# NamespaceIndentation: None
+# NamespaceIndentation: Inner
+NamespaceIndentation: All
+
+# NamespaceMacros:
+
+# OneLineFormatOffRegex:
+
+PPIndentWidth: 0
+
+# PackConstructorInitializers: Never
+# PackConstructorInitializers: BinPack
+PackConstructorInitializers: CurrentLine
+# PackConstructorInitializers: NextLine
+# PackConstructorInitializers: NextLineOnly
+
+PenaltyBreakAssignment: 65536
+
+PenaltyBreakBeforeFirstCallParameter: 65536
+
+PenaltyBreakBeforeMemberAccess: 65536
+
+PenaltyBreakComment: 0
+
+PenaltyBreakFirstLessLess: 65536
+
+PenaltyBreakOpenParenthesis: 65536
+
+PenaltyBreakScopeResolution: 65536
+
+PenaltyBreakString: 65536
+
+PenaltyBreakTemplateDeclaration: 65536
+
+PenaltyExcessCharacter: 0
+
+PenaltyIndentedWhitespace: 65536
+
+PenaltyReturnTypeOnItsOwnLine: 0
+
+PointerAlignment: Left
+# PointerAlignment: Right
+# PointerAlignment: Middle
+
+QualifierAlignment: Leave
+# QualifierAlignment: Left
+# QualifierAlignment: Right
+# QualifierAlignment: Custom
+
+# QualifierOrder:
+
+# RawStringFormats:
+
+
+ReferenceAlignment: Pointer
+# ReferenceAlignment: Left
+# ReferenceAlignment: Right
+# ReferenceAlignment: Middle
+
+# ReflowComments: Never
+# ReflowComments: IndentOnly
+ReflowComments: Always
+
+RemoveBracesLLVM: false
+
+RemoveEmptyLinesInUnwrappedLines: true
+
+RemoveParentheses: Leave
+# RemoveParentheses: MultipleParentheses
+# RemoveParentheses: ReturnStatement
+
+RemoveSemicolon: false
+
+RequiresClausePosition: OwnLine
+# RequiresClausePosition: OwnLineWithBrace
+# RequiresClausePosition: WithPreceding
+# RequiresClausePosition: WithFollowing
+# RequiresClausePosition: SingleLine
+
+# RequiresExpressionIndentation: OuterScope
+RequiresExpressionIndentation: Keyword
+
+# SeparateDefinitionBlocks: Leave
+SeparateDefinitionBlocks: Always
+# SeparateDefinitionBlocks: Never
+
+ShortNamespaceLines: 0
+
+SkipMacroDefinitionBody: true
+
+SortIncludes: CaseSensitive
+
+# SortUsingDeclarations: Never
+# SortUsingDeclarations: Lexicographic
+SortUsingDeclarations: LexicographicNumeric
+
+SpaceAfterCStyleCast: false
+
+SpaceAfterLogicalNot: false
+
+SpaceAfterOperatorKeyword: false
+
+SpaceAfterTemplateKeyword: false
+
+SpaceAroundPointerQualifiers: Default
+# SpaceAroundPointerQualifiers: Before
+# SpaceAroundPointerQualifiers: After
+# SpaceAroundPointerQualifiers: Both
+
+SpaceBeforeAssignmentOperators: true
+
+SpaceBeforeCaseColon: false
+
+SpaceBeforeCpp11BracedList: false
+
+SpaceBeforeCtorInitializerColon: false
+
+SpaceBeforeInheritanceColon: false
+
+# SpaceBeforeParens: ControlStatements
+# SpaceBeforeParens: ControlStatementsExceptControlMacros
+# SpaceBeforeParens: NonEmptyParentheses
+# SpaceBeforeParens: Always
+SpaceBeforeParens: Custom
+
+SpaceBeforeParensOptions:
+    AfterControlStatements: false
+    AfterForeachMacros: false
+    AfterFunctionDeclarationName: false
+    AfterFunctionDefinitionName: false
+    AfterIfMacros: false
+    AfterNot: false
+    AfterOverloadedOperator: false
+    AfterPlacementOperator: false
+    AfterRequiresInClause: false
+    AfterRequiresInExpression: false
+    BeforeNonEmptyParentheses: false
+
+SpaceBeforeRangeBasedForLoopColon: false
+
+SpaceBeforeSquareBrackets: false
+
+# SpaceInEmptyBraces: Always
+# SpaceInEmptyBraces: Block
+# SpaceInEmptyBraces: Never
+
+SpacesBeforeTrailingComments: 1
+
+SpacesInAngles: Never
+# SpacesInAngles: Always
+# SpacesInAngles: Leave
+
+SpacesInContainerLiterals: false
+
+SpacesInLineCommentPrefix:
+    Minimum: 1
+    Maximum: -1
+
+SpacesInParens: Never
+# SpacesInParens: Custom
+
+SpacesInParensOptions:
+    ExceptDoubleParentheses: false
+    InConditionalStatements: false
+    InCStyleCasts: false
+    InEmptyParentheses: false
+    Other: false
+
+SpacesInSquareBrackets: false
+
+# Standard: c++03
+# Standard: c++11
+# Standard: c++14
+# Standard: c++17
+# Standard: c++20
+Standard: Latest
+# Standard: Auto
+
+StatementAttributeLikeMacros: [emit]
+
+StatementMacros: [Q_UNUSED]
+
+TabWidth: 4
+
+# TemplateNames:
+
+# TypeNames:
+
+# TypenameMacros:
+
+UseTab: Never
+# UseTab: ForIndentation
+# UseTab: ForContinuationAndIndentation
+# UseTab: AlignWithSpaces
+# UseTab: Always
+
+# VariableTemplates:
+
+# WhitespaceSensitiveMacros:
+
+# WrapNamespaceBodyWithEmptyLines: Never
+WrapNamespaceBodyWithEmptyLines: Always
+# WrapNamespaceBodyWithEmptyLines: Leave
+...
