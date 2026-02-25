@@ -1,0 +1,162 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        // create-build-dir
+        {
+            "label": "create-build-dir",
+            "detail": "创建构建目录",
+            "hide": true,
+            "type": "shell",
+            "group": {
+                "kind": "none",
+                "isDefault": false
+            },
+            "dependsOn": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "New-Item",
+            "args": [
+                "-ItemType",
+                "\"directory\"",
+                "-Force",
+                "-Path",
+                ".",
+                "-Name",
+                "build"
+            ],
+            "problemMatcher": []
+        },
+        // cmake-config
+        {
+            "label": "cmake-config",
+            "detail": "生成构建配置",
+            "hide": true,
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake",
+            "args": [
+                "-S",
+                ".",
+                "-B",
+                "build"
+            ],
+            "problemMatcher": []
+        },
+        // cmake-debug
+        {
+            "label": "cmake-debug",
+            "detail": "生成 debug 版本可执行文件",
+            "hide": false,
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "cmake-config"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Debug"
+            ],
+            "problemMatcher": []
+        },
+        // cmake-release
+        {
+            "label": "cmake-release",
+            "detail": "生成 release 版本可执行文件",
+            "hide": false,
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "cmake-config"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Release"
+            ],
+            "problemMatcher": []
+        },
+        // msbuild-debug
+        {
+            "label": "msbuild-debug",
+            "detail": "生成 debug 版本可执行文件",
+            "hide": true,
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "cmake-config"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "msbuild",
+            "args": [
+                "build/sln.sln",
+                "-property:Configuration=Debug",
+                "-property:GenerateFullPaths=true",
+                "-consoleloggerparameters:NoSummary",
+                "-m"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        },
+        // msbuild-release
+        {
+            "label": "msbuild-release",
+            "detail": "生成 release 版本可执行文件",
+            "hide": true,
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": [
+                "cmake-config"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "msbuild",
+            "args": [
+                "build/sln.sln",
+                "-property:Configuration=Release",
+                "-property:GenerateFullPaths=true",
+                "-consoleloggerparameters:NoSummary",
+                "-m"
+            ],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

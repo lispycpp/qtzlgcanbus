@@ -1,0 +1,108 @@
+# text file
+*.bash text eol=lf
+*.bat text eol=crlf
+*.c text eol=lf
+*.c++ text eol=lf
+*.cc text eol=lf
+*.clang-format text eol=lf
+*.cmd text eol=crlf
+*.cpp text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.css text eol=lf
+*.csv text eol=lf
+*.cxx text eol=lf
+*.editorconfig text eol=lf
+*.gitattributes text eol=lf
+*.gitignore text eol=lf
+*.h text eol=lf
+*.h++ text eol=lf
+*.hh text eol=lf
+*.hpp text eol=lf
+*.htm text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.jsx text eol=lf
+*.l text eol=lf
+*.lex text eol=lf
+*.m text eol=lf
+*.manifest text eol=lf
+*.md text eol=lf
+*.pro text eol=lf
+*.props text eol=lf
+*.ps1 text eol=crlf
+*.py text eol=lf
+*.py3 text eol=lf
+*.qml text eol=lf
+*.qrc text eol=lf
+*.qss text eol=lf
+*.rc text eol=lf
+*.rs text eol=lf
+*.sh text eol=lf
+*.sln text eol=lf
+*.slnx text eol=lf
+*.svg text eol=lf
+*.tex text eol=lf
+*.tlc text eol=lf
+*.toml text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.txt text eol=lf
+*.ui text eol=lf
+*.xaml text eol=lf
+*.xml text eol=lf
+*.y text eol=lf
+
+# binary file
+*.7z binary
+*.a binary
+*.app binary
+*.bin binary
+*.bmp binary
+*.dll binary
+*.doc binary
+*.docx binary
+*.eps binary
+*.exe binary
+*.fig binary
+*.gif binary
+*.gz binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.lib binary
+*.mat binary
+*.mdl binary
+*.mdlp binary
+*.mexw64 binary
+*.mlapp binary
+*.mlappinstall binary
+*.mlpkginstall binary
+*.mltbx binary
+*.mn binary
+*.o binary
+*.otf binary
+*.out binary
+*.p binary
+*.pdf binary
+*.png binary
+*.ppt binary
+*.pptx binary
+*.qm binary
+*.rar binary
+*.sldd binary
+*.slx binary
+*.slxp binary
+*.so binary
+*.tar binary
+*.tif binary
+*.tiff binary
+*.ttf binary
+*.vsd binary
+*.vsdx binary
+*.webp binary
+*.xls binary
+*.xlsx binary
+*.xz binary
+*.zip binary
